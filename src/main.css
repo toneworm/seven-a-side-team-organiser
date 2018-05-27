@@ -9,13 +9,14 @@ body {
   display: flex;
 }
 
-.field, .subs, .controls {
-  background-color: #f7f7f7;
+.subs, .info {
+  background-color: #fff;
 }
 
 .field {
-  width: 500px;
-  height: 700px;
+  background-image: url("pitch.jpg");
+  width: 532px;
+  height: 800px;
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,13 @@ body {
 .subs {
   width: 100px;
   padding: 15px;
+  border-bottom: 2px solid #6e0f0f;
+}
+
+.info {
+  border: 2px solid #6e0f0f;
+  border-width: 0 2px 2px 0;
+  padding: 15px 40px 15px 15px;
 }
 
 .row {
@@ -35,18 +43,17 @@ body {
 }
 
 .blob {
-  width: 40px;
-  height: 40px;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
   text-align: center;
   line-height: 40px;
   cursor: pointer;
-  background-color: #e4e4e4;
-  border-radius: 20px;
+  background-color: #fff;
+  color: #a50202;
+  border-radius: 22px;
+  border: 2px solid #6e0f0f;
   margin-bottom: 5px;
-}
-
-.controls {
-  padding: 15px;
 }
 
 .save-url-btn, .save-url-input {
@@ -56,34 +63,34 @@ body {
 .save-url-btn {
   box-sizing: border-box;
   height: 40px;
-  line-height: 40px;
+  line-height: 36px;
   padding: 0 20px;
   color: #ffffff;
   font-family: 'Work Sans', sans-serif;
   cursor: pointer;
   font-size: 15px;
   text-transform: uppercase;
-  background-color: #b2c2c6;
-  border: 0;
+  background-color: #6e0f0f;
+  border: 2px solid #6e0f0f;
   border-radius: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .save-url-btn:hover, .save-url-btn:active, .save-url-btn:focus {
-  color: #888;
-  background-color: #e9eff0;
-}
-
-.save-url-btn:hover {
-  box-shadow: inset 0 0 3px #888;
-}
-
-.save-url-btn:active, .save-url-btn:focus {
-  box-shadow: inset 0 0 3px #888;
+  border: 2px solid #6e0f0f;
+  background-color: #fff;
+  color: #6e0f0f;
 }
 
 .save-url-input {
   padding: 5px;
-  color: #888;
+  color: #6e0f0f;
   font-size: 14px;
+  border: 1px solid #6e0f0f;
+  margin-bottom: 10px;
+}
+
+
+.team-info-header {
+  color: #6e0f0f;
 }
