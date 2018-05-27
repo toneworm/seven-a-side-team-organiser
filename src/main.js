@@ -103,11 +103,11 @@ const players = [
     })
 
     if (players.length) {
-      teamInfoPlayers.innerHTML = `<ul><li>${players.join('</li><li>')}</li></ul>`
+      teamInfoPlayers.innerHTML = `<li>${players.join('</li><li>')}</li>`
     }
 
     if (subs.length) {
-      teamInfoSubs.innerHTML = `<ul><li>${subs.join('</li><li>')}</li></ul>`
+      teamInfoSubs.innerHTML = `<li>${subs.join('</li><li>')}</li>`
     }
   }
 
@@ -138,7 +138,7 @@ const players = [
       }
       return playersArr
     }, [])
-    
+
     playersList.sort((a, b) => a.slice(1) > b.slice(1))
 
     return playersList.map((player) => player.slice(0,2)).join('')

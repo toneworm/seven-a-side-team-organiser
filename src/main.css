@@ -26,11 +26,11 @@ body {
 .subs {
   width: 100px;
   padding: 15px;
-  border-bottom: 2px solid #6e0f0f;
+  border-bottom: 2px solid #7e8588;
 }
 
 .info {
-  border: 2px solid #6e0f0f;
+  border: 2px solid #7e8588;
   border-width: 0 2px 2px 0;
   padding: 15px 40px 15px 15px;
 }
@@ -92,5 +92,7 @@ body {
 
 
 .team-info-header {
+  font-weight: bold;
   color: #6e0f0f;
+  margin: 10px 0 5px;
 }
